@@ -1,0 +1,1 @@
+dependencies {	compile project(':calculadora-gradle-lib')}
