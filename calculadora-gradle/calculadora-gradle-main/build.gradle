@@ -1,1 +1,4 @@
-dependencies {	compile project(':calculadora-gradle-lib')}
+
+dependencies {
+	compile project(':calculadora-gradle-lib')
+}
