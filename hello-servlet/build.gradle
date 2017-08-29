@@ -1,0 +1,32 @@
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'war'
+
+repositories {
+	mavenCentral()
+}
+
+configurations {
+	provided
+}
+
+sourceSets {
+	main {
+		compileClasspath += configurations.provided
+		eclipse.classpath.plusConfigurations += [configurations.provided]
+	}
+	test {
+		compileClasspath += configurations.provided
+		runtimeClasspath += configurations.provided
+		eclipse.classpath.plusConfigurations += [configurations.provided]
+	}
+}
+
+dependencies {
+	provided 'javax:javaee-api:7.0'
+}
+
+jar.enabled = false
+
+version = '0.1-SNAPSHOT'
