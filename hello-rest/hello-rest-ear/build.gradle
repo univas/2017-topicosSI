@@ -1,0 +1,17 @@
+
+apply plugin: 'ear'
+
+dependencies {
+	deploy project(path: ':hello-rest-war', configuration: 'archives')
+	earlib project(':hello-rest-core')
+	earlib project(':hello-rest-api')
+}
+
+ear {
+	deploymentDescriptor {
+		def warName = project(':hello-rest-war').name
+		def warVersion = project(':hello-rest-war').version
+		def warFileName = warName + '-' + warVersion + '.war'
+		webModule(warFileName, 'hello')
+	}
+}
