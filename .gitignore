@@ -10,3 +10,5 @@ target/
 bin/
 build/
 
+.DS_Store
+
