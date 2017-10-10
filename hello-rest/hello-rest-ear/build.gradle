@@ -3,8 +3,10 @@ apply plugin: 'ear'
 
 dependencies {
 	deploy project(path: ':hello-rest-war', configuration: 'archives')
+	deploy project(path: ':hello-rest-ejb')
 	earlib project(':hello-rest-core')
 	earlib project(':hello-rest-api')
+	earlib project(':hello-rest-ejb-client')
 }
 
 ear {
@@ -13,5 +15,10 @@ ear {
 		def warVersion = project(':hello-rest-war').version
 		def warFileName = warName + '-' + warVersion + '.war'
 		webModule(warFileName, 'hello')
+
+		def ejbName = project(':hello-rest-ejb').name
+		def ejbVersion = project(':hello-rest-ejb').version
+		def ejbFileName = ejbName + '-' + ejbVersion + '.jar'
+		module(ejbFileName, 'ejb')
 	}
 }

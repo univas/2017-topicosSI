@@ -1,1 +1,1 @@
-include "hello-rest-api", "hello-rest-core", "hello-rest-ear", "hello-rest-war"
+include "hello-rest-api", "hello-rest-core", "hello-rest-ear", "hello-rest-war", "hello-rest-ejb", "hello-rest-ejb-client"
