@@ -4,4 +4,6 @@ public interface Calculator {
 
 	int sum(int a, int b);
 
+	void saveProduct(String name);
+
 }
