@@ -1,0 +1,159 @@
+{
+	"id": "9fc5e5b3-8eb3-afa5-a781-d76821a1f841",
+	"name": "Hello Service Test",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "Hello",
+			"description": "",
+			"collectionId": "9fc5e5b3-8eb3-afa5-a781-d76821a1f841",
+			"order": [
+				"62d83122-8f93-ff91-2f50-71c56f2af398",
+				"5f5fa470-aa6b-6b8d-857e-e36185abe0ae"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "81cb1743-a7b9-38ed-4bc1-f3c2b70c5363"
+		},
+		{
+			"name": "Inventory",
+			"description": "",
+			"collectionId": "9fc5e5b3-8eb3-afa5-a781-d76821a1f841",
+			"order": [
+				"2ddbd8ef-a2e9-bdd8-3563-703a37ae3d71",
+				"ab471f3c-28db-e837-6ce9-ba2ef55b10eb"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "8e732604-9e03-5a9e-326e-7f0f848a89b1"
+		}
+	],
+	"folders_order": [
+		"8e732604-9e03-5a9e-326e-7f0f848a89b1",
+		"81cb1743-a7b9-38ed-4bc1-f3c2b70c5363"
+	],
+	"timestamp": 1510011392980,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "2ddbd8ef-a2e9-bdd8-3563-703a37ae3d71",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:8080/hello/rest/inventory/product/borracha",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "9fc5e5b3-8eb3-afa5-a781-d76821a1f841",
+			"data": null,
+			"dataMode": "params",
+			"name": "Inventory Save",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1510011421337,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "8e732604-9e03-5a9e-326e-7f0f848a89b1"
+		},
+		{
+			"id": "5f5fa470-aa6b-6b8d-857e-e36185abe0ae",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/hello/rest/service/sum",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "9fc5e5b3-8eb3-afa5-a781-d76821a1f841",
+			"data": [
+				{
+					"key": "a",
+					"value": "10",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "b",
+					"value": "20",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "Sum",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1510011579002,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "81cb1743-a7b9-38ed-4bc1-f3c2b70c5363"
+		},
+		{
+			"id": "62d83122-8f93-ff91-2f50-71c56f2af398",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:8080/hello/rest/service/say/Marcio",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "9fc5e5b3-8eb3-afa5-a781-d76821a1f841",
+			"data": null,
+			"dataMode": "params",
+			"name": "Say Name",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1510011525455,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "81cb1743-a7b9-38ed-4bc1-f3c2b70c5363"
+		},
+		{
+			"id": "ab471f3c-28db-e837-6ce9-ba2ef55b10eb",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:8080/hello/rest/inventory/product/names",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "9fc5e5b3-8eb3-afa5-a781-d76821a1f841",
+			"data": null,
+			"dataMode": "params",
+			"name": "Inventory Retrieve",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1510011468207,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "8e732604-9e03-5a9e-326e-7f0f848a89b1"
+		}
+	]
+}
