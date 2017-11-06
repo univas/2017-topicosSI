@@ -15,7 +15,6 @@ public class HelloServiceImpl implements HelloService {
 
 	@Override
 	public String sayHello(String name) {
-		calculator.saveProduct(name);
 		return String.format("<h1>Hello %s!!!</h1>", name);
 	}
 
