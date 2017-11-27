@@ -56,7 +56,7 @@ shopping-ear-0.1-SNAPSHOT.ear
 
 ### Criação de pedido de compra
 
-* URL: `<context-root>/order/add`
+* URL: `<context-root>/rest/order/add`
 * Método: `POST`
 * Parâmetros:
   * `description` (parâmetro de formulário)
@@ -69,7 +69,7 @@ shopping-ear-0.1-SNAPSHOT.ear
 
 ### Busca das descrições de todos os pedidos
 
-* URL: `<context-root>/order/all`
+* URL: `<context-root>/rest/order/all`
 * Método: `GET`
 * Parâmetros: Este método não requer parâmetros.
 * Resposta:
